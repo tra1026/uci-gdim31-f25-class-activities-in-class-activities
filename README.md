@@ -1,7 +1,8 @@
 # in-class-activities
 ## Devlogs
 ### W1
-Write your W1 activity Devlog here.
+1. When the Camera is no longer a child of the Cat, it stays in a fixed position and no longer follows or turns with the Cat. The Cat can still move and may leave the camera's view because the Camera no longer inherits the Cat's position and rotation.
+2. My Itch page: [W1 In-Class Activities](https://tra1026.itch.io/w1-in-class-activites)
 
 ### W2
 1. The r, g, and b variables are floats because color values can include decimals between 0 and 1, such as 0.1 and 0.58. Ints cannot represent these fractional values, bools only represent true or false, and strings store text but no numeric values for calculations.
