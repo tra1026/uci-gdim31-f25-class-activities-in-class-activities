@@ -31,6 +31,9 @@ Table#: #3
 1. I added Rigidbody components to the Cat and SoccerBall so Unity could apply physics to them. I checked Is Trigger on the Goal's Box Collider so the ball could pass through the goal area and `SoccerBall.OnTriggerEnter` could detect it. The ball's Sphere Collider and the Cat's Capsule Collider remain non-trigger colliders so they can physically interact with the scene.
 2. When I first tested the game, the goal did not register until I checked that the Goal's Box Collider has Is Trigger enabled and that the SoccerBall had a Rigidbody. After fixing those settings, the ball could pass through the goal and trigger the scoring code.
 
+### W5
+We agreed to use a Transform variable for the deer’s target so we could assign it in the Inspector. In Start(), we would use GetComponent to get the NavMeshAgent, then call SetDestination with the target’s position. We chose the red mushroom as the target to test whether the deer moved correctly.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
