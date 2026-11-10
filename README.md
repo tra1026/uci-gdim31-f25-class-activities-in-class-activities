@@ -34,6 +34,15 @@ Table#: #3
 ### W5
 We agreed to use a Transform variable for the deer’s target so we could assign it in the Inspector. In Start(), we would use GetComponent to get the NavMeshAgent, then call SetDestination with the target’s position. We chose the red mushroom as the target to test whether the deer moved correctly.
 
+### W7
+#### Activity 1: Class resource guide
+I worked on General C# coding.
+https://docs.google.com/document/d/1aeLK5I-99IDjuatIuVXIrAsnugJpk2Gnpb_A2gVelQQ/edit?tab=t.0
+#### Activity 2: Pair Programming Plan
+The BatW6 class needs a Transform member variable for the Cat, a float speed value that can be changed in the Inspector, and a bool that records whether the bat is chasing. Update() checks that bool and moves the bat toward the Cat with Vector3.MoveTowards. The public StartChasing() and StopChasing() methods change the bool so BatManager can control each bat.
+
+After the pair-programming test, I removed the temporary Start() method from BatW6. BatManager stores all bats in an array, checks each bat's distance from the player in a for loop, starts or stops its chase, and creates a random reaction message when it reaches the player.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
